@@ -6,7 +6,6 @@
 
 #include <iostream>
 using namespace std;
-#include <cstdio>
 #include <cstring>
 
 class lll_node {

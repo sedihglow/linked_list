@@ -96,7 +96,10 @@ int linked_list::insert(char *data, lll_node *&head)
             cerr << "failed to alloc" << endl;
             return FAILURE;
         }
-        head->set_data(data);
+
+        if (head->set_data(data) == FAILURE)
+            return FAILURE;
+
         return SUCCESS;
     }
 
